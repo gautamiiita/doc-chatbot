@@ -297,6 +297,8 @@ gcloud run deploy secutix-chatbot --source .
 
 See `DEPLOYMENT.md` for detailed instructions.
 
+**🚂 Railway Users**: See `RAILWAY_DEPLOYMENT.md` for complete step-by-step guide.
+
 ## 🔐 Security
 
 - ✅ API keys stored in `.env` (never commit)

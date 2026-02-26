@@ -296,4 +296,6 @@ async def search(q: str = Query(..., min_length=1)):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    # Use PORT env var (Railway, Heroku, etc.) or default to 8001
+    port = int(os.getenv("PORT", 8001))
+    uvicorn.run(app, host="0.0.0.0", port=port)
