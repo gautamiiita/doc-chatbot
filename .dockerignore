@@ -1,11 +1,60 @@
-__pycache__
-*.pyc
+# Version control
 .git
 .gitignore
+.github
+
+# Environment
+.env
 .env.local
-venv
-.vscode
+.env.*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
-backend_old.py
+Thumbs.db
+
+# Documentation (markdown)
 *.md
-.gitignore
+
+# Development files
+backend_old.py
+crawler*.py
+vectorizer.py
+build.py
+query.py
+test*.py
+
+# Data files (large, not needed in container)
+.embeddings/
+confluence_*.json
+chunks.json
+*.json.bak*
+*.log
+crawler.log.bak
+
+# Node modules (if any)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Unnecessary files
+example.html
+test.html
+widget.*
