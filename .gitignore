@@ -17,3 +17,7 @@ build/
 *~
 .coverage
 htmlcov/
+.embeddings/
+*.json.bak*
+confluence_*.json
+chunks.json

@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+.git
+.gitignore
+.env.local
+venv
+.vscode
+.DS_Store
+backend_old.py
+*.md
+.gitignore

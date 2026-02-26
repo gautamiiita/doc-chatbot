@@ -218,11 +218,12 @@ class ConfluenceCrawler:
 
 def main():
     """Main entry point"""
+    import os
     
     # Configuration
     base_url = "https://confluence-secutix.atlassian.net/wiki/rest/api/content"
-    username = "gautam.srivastava@secutix.com"
-    token = "ATATT3xFfGF0j2StmTxFMgIt5_jF11-UAKtxZl895-SG4hLpD0s_082YM4AeX9ZPLFzOm3LT1bQGhemLNgsnOMzNs33H38hpJfkX5Ll4ieYn-zI-0PWcEiSEj_qaFbJlHuITv2JeItGIw2SafrR6LVg8OPgwlvlBWBibljYQKNDmjEFxBXKoirk=AD0E5D08"
+    username = os.getenv("CONFLUENCE_USER", "gautam.srivastava@secutix.com")
+    token = os.getenv("CONFLUENCE_TOKEN", "")
     
     # Create crawler
     crawler = ConfluenceCrawler(base_url, username, token)

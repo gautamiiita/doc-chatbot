@@ -3,8 +3,8 @@ import os
 import requests
 
 confluence_url = "https://confluence-secutix.atlassian.net"
-username = "gautam.srivastava@secutix.com"
-token = "***REMOVED***"
+username = os.getenv("CONFLUENCE_USER", "gautam.srivastava@secutix.com")
+token = os.getenv("CONFLUENCE_TOKEN", "")
 
 print("🔍 Testing Confluence API with direct page ID...")
 
